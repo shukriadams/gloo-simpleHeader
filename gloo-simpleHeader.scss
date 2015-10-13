@@ -1,0 +1,86 @@
+$gloo-simpleHeader-backgroundColor:black !default;
+$gloo-simpleHeader-textColor:white !default;
+$gloo-simpleHeader-hoverColor:orange !default;
+
+.gloo-simpleHeader {
+  padding-top:$gloo-verticalRhythm;
+  padding-bottom:$gloo-verticalRhythm;
+  background-color:$gloo-simpleHeader-backgroundColor;
+  color:$gloo-simpleHeader-textColor;
+  @media #{$gloo-responsive-small}{
+    height: 60px;
+  }
+
+  /* docks menu to top of window */
+  &.gloo-simpleHeader--docktop{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width:100%;
+    background-color: orange;
+  }
+
+  .gloo-simpleHeader-logo {
+    left: 32px;
+    top: 12px;
+    font-size: 2em;
+    @media #{$gloo-responsive-small}{
+      position: absolute;
+    }
+  }
+
+  a {
+    color:$gloo-simpleHeader-textColor;
+    text-decoration: none;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute
+  }
+
+  .gloo-simpleHeader-main{
+    text-align:center;
+    vertical-align: middle;
+    width: 100%;
+    @media #{$gloo-responsive-small}{
+
+    }
+  }
+
+  .gloo-simpleHeader-title {
+    padding: 0;
+  }
+
+  .gloo-simpleHeader-subtitle {
+    padding: 0;
+  }
+
+  .gloo-simpleHeader-menuItemWrapper{
+    @media #{$gloo-responsive-small}{
+      height: 100%;
+      position: absolute;
+      right: 12px;
+    }
+  }
+
+  .gloo-simpleHeader-menuItem{
+    text-align:center;
+    position:relative;
+    white-space: nowrap;
+    @media #{$gloo-responsive-small}{
+      vertical-align: middle;
+      height:100%;
+      display:inline-block;
+    }
+
+    &:hover {
+      color:$gloo-simpleHeader-hoverColor;
+      @include gloo-utils-transition(all, 0.5s);
+    }
+
+  }
+
+
+
+}

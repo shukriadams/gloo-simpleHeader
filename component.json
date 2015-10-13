@@ -1,0 +1,7 @@
+{
+  "name" : "gloo-simpleHeader",
+  "description" : "Header bar with links to right side. Collapses to single column in mobile.",
+  "dependencies": {
+    "gloo-base" : "0.0.1"
+  }
+}

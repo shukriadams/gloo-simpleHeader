@@ -1,0 +1,17 @@
+{
+  "_modelName" : "glooSimpleHeader",
+  "title" : "I am the headlines",
+  "subtitle" : "I am a subtitle",
+
+  "_comment" : "top|bottom. Empty for none. Docks menu to window ",
+  "dock" : "",
+
+  "icon" : "",
+
+  "menu" : {
+    "items" : [
+      { "text" : "thing 1" , "href" : "thing1.html"},
+      { "text" : "thing 2" , "href" : "thing2.html"}
+    ]
+  }
+}

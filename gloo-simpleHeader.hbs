@@ -1,0 +1,28 @@
+<div class="gloo-simpleHeader {{#if dock}}gloo-simpleHeader--dock{{dock}}{{/if}}">
+    <div class="gloo-simpleHeader-main">
+        {{#if icon}}
+            <i class="gloo-simpleHeader-logo {{icon}}"></i>
+        {{/if}}
+        <a href="{{href}}"></a>
+        <div class="gloo-simpleHeader-title">
+            {{title}}
+        </div>
+
+        {{#if subtitle}}
+            <div class="gloo-simpleHeader-subtitle">
+                {{subtitle}}
+            </div>
+        {{/if}}
+
+    </div>
+
+
+    <div class="gloo-simpleHeader-menuItemWrapper">
+        {{#each menu.items }}
+            <div class="gloo-simpleHeader-menuItem">
+                <a href="{{this.href}}"></a>
+                {{this.text}}
+            </div>
+        {{/each}}
+    </div>
+</div>
